@@ -1,5 +1,5 @@
 GET http://localhost:4000/posts
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJoZW5yeSIsImlhdCI6MTYxNTY4MTk3MCwiZXhwIjoxNjE1NjgxOTg1fQ.o6EAS0jpB8-2vK5q2cvPlE150u2jJa1MCWjL2LjDPOQ
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJoZW5yeSIsImlhdCI6MTYxNTcxNjE5NCwiZXhwIjoxNjE1NzE2NDk0fQ.GwjcMpf5itSfVepLKgnXlOvzkLgrwOhuXfOZVtOctbk
 
 ###
 
@@ -7,7 +7,7 @@ POST http://localhost:5000/login
 Content-Type: application/json
 
 {
-  "username": "henry"
+  "username": "jim"
 }
 
 ###
@@ -16,5 +16,10 @@ POST http://localhost:5000/token
 Content-Type: application/json
 
 {
-  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwidXNlcm5hbWUiOiJqaW0iLCJpYXQiOjE2MTU2MTcwNDAsImV4cCI6MTYxNTYyMDY0MH0.8rijIvdX9Ni70Cy601r1aviE3v_IgKWdQU91GbxJtg8"
+  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJoZW5yeSIsImlhdCI6MTYxNTcxNTE4NSwiZXhwIjoxNjE1NzE4Nzg1fQ.MZ8KfbLd7_Tb-kncG6chjo3JXD46Yyyopeo0qj3MlKk"
 }
+
+###
+
+DELETE http://localhost:5000/logout
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJoZW5yeSIsImlhdCI6MTYxNTcxNjE5NCwiZXhwIjoxNjE1NzE2NDk0fQ.GwjcMpf5itSfVepLKgnXlOvzkLgrwOhuXfOZVtOctbk
